@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <style type="text/css">
+		body{
+			background-color: lightcyan ;
+					}
+		h1{
+			color: green;
+			font-family: bold;
+			font-size: 25;
+		}
+		p{
+			color: blueviolet;
+			font-family: fantasy;
+			font-size: 20;
+		}
+		b{
+			color: Black;
+			font-size: 15;
+		}
+	</style>
+</head>
+<body>
+<form action="/dashboard" method="Post">
+    <h1>Registration Page</h1>
+
+    <p>Patient Name</p>
+    <input type="text" name="pname">
+    <br>
+    <p>Mobile number</p>
+    <input type="text" name="mno">
+    <br>
+    <p>Age </p>
+    <input type="text" name="age1">
+    <br>
+    <p>Address</p>
+    <input type="text" name="add">
+    <br>
+    <p>DOB [FORMAT yyyy-mm-dd] </p>
+    <input type="text" name="pdob">
+    <br>
+
+
+    <p>Place</p>
+    <input type="text" name="ples">
+    <br>
+    <p>Pincode</p>
+    <input type="text" name="pin">
+    <br>
+    <br><br>
+    <input type="submit" value="Submit" onclick="refreshPage()">
+</form>
+
+
+</body>
+</html>
