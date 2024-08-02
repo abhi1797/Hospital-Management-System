@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View your searched result</title>
+    <style type="text/css">
+		body{
+			background-color: lightgray ;
+					}
+		h3{
+			color: green;
+			font-family: bold;
+			font-size: 25;
+		}
+		p{
+			color: blueviolet;
+			font-family: fantasy;
+			font-size: 20;
+		}
+
+	</style>
+</head>
+<body>
+<h3>Patients Information</h3>
+<table border=7>
+    <thead>
+    <td>Name</td>
+    <td>Mobile number</td>
+    <td>Age</td>
+    <td>Address</td>
+    <td>DOB</td>
+    <td>Place</td>
+    <td>Pincode</td>
+
+    </thead>
+{% for x in rows %}
+    <tr>
+        <td>{{x["name"]}}</td>
+        <td>{{x["mobile_no"]}}</td>
+        <td>{{x["age"]}}</td>
+        <td>{{x["address"]}}</td>
+        <td>{{x["DOB"]}}</td>
+        <td>{{x["place"]}}</td>
+        <td>{{x["pincode"]}}</td>
+    </tr>
+
+    {% endfor %}
+</table>
+</body>
+</html>
